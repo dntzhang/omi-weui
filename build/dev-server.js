@@ -11,21 +11,24 @@ const app = express();
 const compiler = webpack(webpackConfig);
 
 app.use(webpackDevMiddleware(compiler, {
+    noInfo: true,
     publicPath: webpackConfig.output.publicPath,
     stats: {
-        color: true,
+        colors: true,
         chunks: false
     }
 }));
-app.use(webpackHotMiddleware(compiler));
+app.use(webpackHotMiddleware(compiler, {
+    log: console.log, path: '/__webpack_hmr'
+}));
 
-compiler.plugin('compilation', function (compilation) {
-    compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
-        webpackHotMiddleware.publish({action: 'reload'})
-        cb()
-    })
-});
+// compiler.plugin('compilation', function (compilation) {
+//     compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
+//         webpackHotMiddleware.publish({});
+//         cb()
+//     })
+// });
 
 app.listen(port, function () {
     console.log("Listening on port " + port + '\n')
-})
+});

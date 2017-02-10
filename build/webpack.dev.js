@@ -20,8 +20,7 @@ module.exports = merge(baseWebpackConfig, {
         // new webpack.DefinePlugin({
         //     'process.env': config.env
         // }),
-        // new webpack.optimize.OccurrenceOrderPlugin(),
-        // new webpack.HotModuleReplacementPlugin(),
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: config.index,
