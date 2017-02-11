@@ -5,16 +5,17 @@ export default class Button extends Omi.Component{
     constructor(data) {
         super(data);
     }
-    install(){
 
+    install(){
         this.data = Object.assign({},
             this.data,
             {
                 disabled: this.data.disabled || false,
                 type: this.data.type || 'primary',
-                size: this.data.size || 'normal',
+                size: this.data.size || 'normal'
             });
     }
+
     render(){
         const { className, size, type, plain,　...other} = this.data;
         const Component = this.data.href || type == 'vcode' ? 'a' : 'button';

@@ -1,5 +1,6 @@
 # omi-weui
-weui elements for [omi](https://github.com/AlloyTeam/omi)
+
+WeUI Components build with Omi(https://github.com/AlloyTeam/omi).
 
 ## development
 
