@@ -15,6 +15,11 @@ export default class Button extends Omi.Component{
                 size: this.data.size || 'normal'
             });
     }
+
+    handleClick(){
+        this.data.onClick&&this.data.onClick();
+    }
+
     render(){
         const { className, size, type, plain,　...other} = this.data;
         const Component = this.data.href || type == 'vcode' ? 'a' : 'button';
@@ -32,7 +37,7 @@ export default class Button extends Omi.Component{
             [className]: className
         });
         return `
-            <${Component} ${href} class="${cls}">{{text}}{{{children}}}</${Component}>
+            <${Component} ${href} onclick="handleClick()" class="${cls}">{{text}}{{{children}}}</${Component}>
         `;
     }
 }

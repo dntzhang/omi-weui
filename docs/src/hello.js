@@ -1,5 +1,5 @@
 import Omi from 'omi/dist/omi'
-import { Button, List, Progress, Article} from '../../src/index'
+import { Button, List, Progress, Article, dialog} from '../../src/index'
 
 
 Omi.makeHTML('Button', Button);
@@ -13,7 +13,8 @@ export default class Hello extends Omi.Component {
         this.listData = {
             items:[
                 {name:'item1'},
-                {name:'item2'}]
+                {name:'item2'},
+                {name:'item3'}]
         }
         this.articleData = {
             content: `
@@ -54,20 +55,35 @@ export default class Hello extends Omi.Component {
          `;
     }
 
-    handleClick(target, evt){
-        alert(target.innerHTML);
+    showDialog(){
+        dialog.confirm({
+            msg:'I am Omi Dialog!',
+            yes:function(){
+                //alert('you click yes');
+            },
+            no:function(){
+                //alert('you click no');
+            }
+        })
     }
 
     render() {
         return  `
             <div class="class">
-                <h1 style="text-align: center;" onclick="handleClick(this, event)">{{name}}</h1>
+                <h1 style="text-align: center;"><a href="https://github.com/AlloyTeam/omi">{{omi}}</a>-{{weui}}</h1>
                 <div class="page__hd">
                     <h1 class="page__title">Button</h1>
                     <p class="page__desc">按钮</p>
                 </div>
                 <div class="page__bd page__bd_spacing">
                     <Button data-text="测试按钮" data-href="javascript:;"  data-aaa="test"/>
+                </div>
+                <div class="page__hd">
+                    <h1 class="page__title">弹出层</h1>
+                    <p class="page__desc">Dailog</p>
+                </div>
+                <div class="page__bd page__bd_spacing">
+                    <Button data-text="点我显示弹出层" data-size="small" onClick="showDialog" data-href="javascript:;"  data-aaa="test"/>
                 </div>
                 <div class="page__hd">
                     <h1 class="page__title">List</h1>

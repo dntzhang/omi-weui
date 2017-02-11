@@ -7,6 +7,6 @@ if(module.hot) {
     module.hot.accept();
 }
 
-Omi.render(new Hello({ name : "Omi-WeUI" }),"body");
+Omi.render(new Hello({ omi:"Omi",weui : "WeUI" }),"body",true);
 
 
