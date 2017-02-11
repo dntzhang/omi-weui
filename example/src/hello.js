@@ -24,7 +24,7 @@ export default class Hello extends Omi.Component {
     render() {
         return  `
             <div class="wrap">
-                <Button data-text="测试按钮" data-html="<span>哈哈</span>" />
+                <Button data-text="测试按钮" data-href="javascript:;"/>
                 <h1 onclick="handleClick(this, event)">Hello ,{{name}}!</h1>
             </div>
         `;
