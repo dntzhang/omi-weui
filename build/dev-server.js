@@ -5,7 +5,7 @@ const webpack = require("webpack");
 const config = require('../config');
 const webpackConfig = require("./webpack.dev");
 
-const port= config.port;
+const port = config.port;
 
 const app = express();
 const compiler = webpack(webpackConfig);
@@ -21,13 +21,6 @@ app.use(webpackDevMiddleware(compiler, {
 app.use(webpackHotMiddleware(compiler, {
     log: console.log, path: '/__webpack_hmr'
 }));
-
-// compiler.plugin('compilation', function (compilation) {
-//     compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
-//         webpackHotMiddleware.publish({});
-//         cb()
-//     })
-// });
 
 app.listen(port, function () {
     console.log("Listening on port " + port + '\n')

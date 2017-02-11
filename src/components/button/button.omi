@@ -6,6 +6,7 @@ export default class Button extends Omi.Component{
         super(data);
     }
     install(){
+
         this.data = Object.assign({},
             this.data,
             {
@@ -15,7 +16,7 @@ export default class Button extends Omi.Component{
             });
     }
     render(){
-        const { className, size, type, plain } = this.data;
+        const { className, size, type, plain,　...other} = this.data;
         const Component = this.data.href || type == 'vcode' ? 'a' : 'button';
         const href = this.data.href ? `href="${this.data.href}"` : null;
         const cls = this.data.type == 'vcode' ? classNames('weui-vcode-btn', {[className]: className}) : classNames({
@@ -30,6 +31,7 @@ export default class Button extends Omi.Component{
             'weui-btn_plain-disabled': this.data.disabled && plain,
             [className]: className
         });
+        console.log(other)
         return `
             <${Component} ${href} class="${cls}">{{text}}{{{children}}}</${Component}>
         `;

@@ -10,8 +10,13 @@ module.exports = merge(baseWebpackConfig, {
         rules: [
             {
                 test: /\.(js|omi)$/,
-                use: 'babel-loader',
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ["es2015", "stage-1"]
+                    }
+                },
             },
             {
                 test: /\.less$/,
