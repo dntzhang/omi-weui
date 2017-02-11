@@ -3,10 +3,10 @@ var path = require('path')
 module.exports = {
     global: {
         entry: {
-            app: path.resolve(__dirname, '../example/src/main.js')
+            app: path.resolve(__dirname, '../docs/src/main.js')
         },
         assetsRoot: path.resolve(__dirname, '../docs'),
-        index: path.resolve(__dirname, '../example/src/index.html')
+        index: path.resolve(__dirname, '../docs/src/index.html')
     },
     build: {
         env: '"production"',
