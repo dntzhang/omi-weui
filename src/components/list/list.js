@@ -1,6 +1,6 @@
 import Omi from 'omi/dist/omi'
 
-export default class Button extends Omi.Component{
+export default class List extends Omi.Component{
     constructor(data) {
         super(data);
     }
