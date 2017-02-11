@@ -15,7 +15,6 @@ export default class Button extends Omi.Component{
                 size: this.data.size || 'normal'
             });
     }
-
     render(){
         const { className, size, type, plain,　...other} = this.data;
         const Component = this.data.href || type == 'vcode' ? 'a' : 'button';
@@ -32,7 +31,6 @@ export default class Button extends Omi.Component{
             'weui-btn_plain-disabled': this.data.disabled && plain,
             [className]: className
         });
-        console.log(other)
         return `
             <${Component} ${href} class="${cls}">{{text}}{{{children}}}</${Component}>
         `;
