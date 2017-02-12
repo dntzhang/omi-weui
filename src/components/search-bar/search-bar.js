@@ -5,9 +5,18 @@ export default class SearchBar extends Omi.Component{
         super(data);
     }
 
-    focus(dom){
+    installed(){
+
+        document.addEventListener('click',function(){
+            this.refs.searchInput.blur();
+            this.node.classList.remove('weui-search-bar_focusing');
+        }.bind(this),false);
+    }
+
+    focus(dom, evt){
         this.refs.searchInput.focus();
         dom.classList.add('weui-search-bar_focusing');
+        evt.stopPropagation();
     }
 
     cancel(evt){
@@ -18,7 +27,7 @@ export default class SearchBar extends Omi.Component{
 
     render(){
         return `
-        <div class="weui-search-bar" onclick="focus(this)" id="searchBar">
+        <div class="weui-search-bar" onclick="focus(this, event)" id="searchBar">
             <form class="weui-search-bar__form">
                 <div class="weui-search-bar__box">
                     <i class="weui-icon-search"></i>

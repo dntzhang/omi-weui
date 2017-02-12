@@ -7,6 +7,7 @@ import Article from './components/aritcle/index';
 import dialog from './components/dialog/index';
 import { Footer, FooterLink, FooterLinks, FooterText } from './components/footer/index'
 import Label from './components/label/index'
+import SearchBar from './components/search-bar/index'
 
 export {
     version,
@@ -19,5 +20,6 @@ export {
     FooterLinks,
     FooterLink,
     FooterText,
-    Label
+    Label,
+    SearchBar
 }

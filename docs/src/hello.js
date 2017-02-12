@@ -1,11 +1,13 @@
 import Omi from 'omi/dist/omi'
-import { Button, List, Progress, Article, dialog} from '../../src/index'
+import { Button, List, Progress, Article, dialog, SearchBar} from '../../src/index'
 
 
 Omi.makeHTML('Button', Button);
 Omi.makeHTML('List', List);
 Omi.makeHTML('Progress', Progress);
 Omi.makeHTML('Article', Article);
+Omi.makeHTML('SearchBar', SearchBar);
+
 
 export default class Hello extends Omi.Component {
     constructor(data) {
@@ -84,6 +86,13 @@ export default class Hello extends Omi.Component {
                 </div>
                 <div class="page__bd page__bd_spacing">
                     <Button data-text="点我显示弹出层" data-size="small" onClick="showDialog" data-href="javascript:;"  data-aaa="test"/>
+                </div>
+                <div class="page__hd">
+                    <h1 class="page__title">SearchBar</h1>
+                    <p class="page__desc">搜索栏</p>
+                </div>
+                <div class="page__bd page__bd_spacing">
+                    <SearchBar "/>
                 </div>
                 <div class="page__hd">
                     <h1 class="page__title">List</h1>
