@@ -1,11 +1,12 @@
 import Omi from 'omi/dist/omi'
-import { Button, List, Progress, Article, dialog} from '../../src/index'
+import { Button, List, Progress, Article, dialog, SearchBar} from '../../src/index'
 
 
 Omi.makeHTML('Button', Button);
 Omi.makeHTML('List', List);
 Omi.makeHTML('Progress', Progress);
 Omi.makeHTML('Article', Article);
+Omi.makeHTML('SearchBar', SearchBar);
 
 export default class Hello extends Omi.Component {
     constructor(data) {
@@ -70,7 +71,7 @@ export default class Hello extends Omi.Component {
     render() {
         return  `
             <div class="class">
-                <h1 style="text-align: center;"><a href="https://github.com/AlloyTeam/omi">{{omi}}</a>-{{weui}}</h1>
+                <h1 style="text-align: center;">{{name}}</h1>
                 <div class="page__hd">
                     <h1 class="page__title">Button</h1>
                     <p class="page__desc">按钮</p>
@@ -84,6 +85,13 @@ export default class Hello extends Omi.Component {
                 </div>
                 <div class="page__bd page__bd_spacing">
                     <Button data-text="点我显示弹出层" data-size="small" onClick="showDialog" data-href="javascript:;"  data-aaa="test"/>
+                </div>
+                <div class="page__hd">
+                    <h1 class="page__title">SearchBar</h1>
+                    <p class="page__desc">搜索栏</p>
+                </div>
+                <div class="page__bd page__bd_spacing">
+                     <SearchBar data="articleData"/>
                 </div>
                 <div class="page__hd">
                     <h1 class="page__title">List</h1>
