@@ -1,6 +1,6 @@
 /*!
  *  omi-weui v0.1.0  
- *  Github: https://github.com/pasturn/omi-weui
+ *  Github: https://github.com/omijs/omi-weui
  *  Omi: https://github.com/AlloyTeam/omi
  *  MIT Licensed.
  */
