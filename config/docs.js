@@ -11,13 +11,14 @@ module.exports = {
     build: {
         env: '"production"',
         assetsSubDirectory: '',
-        assetsPublicPath: '',
+        assetsPublicPath: './',
         productionGzip: false,
         productionGzipExtensions: ['js', 'css']
     },
     dev: {
         env: '"development"',
         port: 3000,
+        hotPath: 'webpack-hot-middleware/client?reload=true',
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         proxyTable: {},
