@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "docs": "NODE_ENV=production node build/docs.js docs",
+    "wdocs": "set NODE_ENV=production node build/docs.js docs",
     "dist": "webpack",
     "lint": "eslint src",
     "test": "karma start test/karma.conf.js"
