@@ -1,11 +1,12 @@
 import Omi from 'omi/dist/omi'
-import { Button, List, Progress, Article, dialog} from '../../src/index'
+import { Button, List, Progress, Article, dialog, Footer} from '../../src/index'
 
 
 Omi.makeHTML('Button', Button);
 Omi.makeHTML('List', List);
 Omi.makeHTML('Progress', Progress);
 Omi.makeHTML('Article', Article);
+Omi.makeHTML('Footer', Footer);
 
 export default class Hello extends Omi.Component {
     constructor(data) {
@@ -44,6 +45,9 @@ export default class Hello extends Omi.Component {
                     </p>
                 </section>
             </section>`
+        }
+        this.footerData = {
+            content: `Omi Team`
         }
     }
 
@@ -105,6 +109,9 @@ export default class Hello extends Omi.Component {
                 </div>
                 <div class="page__bd page__bd_spacing">
                      <Article data="articleData"/>           
+                </div>
+                <div class="page__bd page__bd_spacing">
+                     <Footer data="footerData"/>           
                 </div>
             </div>
         `;
