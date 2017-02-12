@@ -1,5 +1,5 @@
 import Omi from 'omi/dist/omi'
-import { Button, List, Progress, Article, dialog, SearchBar, Switch} from '../../src/index'
+import { Button, List, Progress, Article, dialog, SearchBar, Switch, Slider} from '../../src/index'
 
 
 Omi.makeHTML('Button', Button);
@@ -8,6 +8,7 @@ Omi.makeHTML('Progress', Progress);
 Omi.makeHTML('Article', Article);
 Omi.makeHTML('SearchBar', SearchBar);
 Omi.makeHTML('Switch', Switch);
+Omi.makeHTML('Slider', Slider);
 
 export default class Hello extends Omi.Component {
     constructor(data) {
@@ -110,20 +111,32 @@ export default class Hello extends Omi.Component {
                 </div>
 
                 <div class="weui-cells weui-cells_form">
-                <div class="weui-cell weui-cell_switch">
-                    <div class="weui-cell__bd">标题文字</div>
-                    <div class="weui-cell__ft">
-                         <Switch data-checked="checked" />
+                    <div class="weui-cell weui-cell_switch">
+                        <div class="weui-cell__bd">标题文字</div>
+                        <div class="weui-cell__ft">
+                             <Switch data-checked="checked" />
+                        </div>
+                    </div>
+                    <div class="weui-cell weui-cell_switch">
+                        <div class="weui-cell__bd">兼容IE Edge的版本</div>
+                        <div class="weui-cell__ft">
+                             <Switch  />
+                        </div>
                     </div>
                 </div>
-                <div class="weui-cell weui-cell_switch">
-                    <div class="weui-cell__bd">兼容IE Edge的版本</div>
-                    <div class="weui-cell__ft">
-                         <Switch  />
-                    </div>
-                </div>
-            </div>
 
+                <div class="page__hd">
+                    <h1 class="page__title">Slider</h1>
+                    <p class="page__desc">滑块</p>
+                </div>
+                <div class="page__bd page__bd_spacing">
+                    <Slider data-value="50" />
+                    <br>
+                    <Slider data-value="30" />
+                </div>
+                <a href="https://github.com/AlloyTeam/omi" target="_blank" style="position: absolute;z-index: 1000; right: 0; top: 0;">
+                    <img src="http://alloyteam.github.io/omi/asset/github.png" alt="" />
+                </a>
             </div>
         `;
     }
