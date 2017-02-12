@@ -61,6 +61,7 @@ export default class Hello extends Omi.Component {
                     <h1 class="page__title">
                         {{name}}
                     </h1>
+                    <p class="page__desc">Omi 是一款开放且现代的组件化框架，完全面向对象的设计，超小的尺寸，内建积木系统。</p>
                     <p class="page__desc">WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。</p>
                 </div>
                 <div class="page__hd">
