@@ -4,7 +4,7 @@ import classNames from 'classnames'
 export default class Icon extends Omi.Component {
     constructor(data) {
         super(data);
-        data = Object({
+        data = Object.assign(data, {
             value: data.value || 'success',
             size: data.size || 'small'
         })
