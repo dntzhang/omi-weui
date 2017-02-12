@@ -5,12 +5,19 @@ import List from './components/list/index';
 import Progress from './components/progress/index';
 import Article from './components/aritcle/index';
 import dialog from './components/dialog/index';
+import { Footer, FooterLink, FooterLinks, FooterText } from './components/footer/index'
+import Label from './components/label/index'
 
-module.exports = {
+export {
     version,
     Button,
     List,
     Progress,
     Article,
-    dialog
+    dialog,
+    Footer,
+    FooterLinks,
+    FooterLink,
+    FooterText,
+    Label
 }
