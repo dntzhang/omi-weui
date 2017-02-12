@@ -10,6 +10,7 @@ import Label from './components/label/index';
 import SearchBar from './components/search-bar/index';
 import Switch from './components/switch/index';
 import Slider from './components/slider/index';
+import Icon from './components/icon/index';
 
 export {
     version,
@@ -25,5 +26,6 @@ export {
     Label,
     SearchBar,
     Switch,
-    Slider
+    Slider,
+    Icon
 }
