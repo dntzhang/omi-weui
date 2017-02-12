@@ -72,7 +72,7 @@ export default class Hello extends Omi.Component {
     render() {
         return  `
             <div class="class">
-                <h1 style="text-align: center;"><a href="https://github.com/AlloyTeam/omi">{{omi}}</a>-{{weui}}</h1>
+                <h1 style="text-align: center;">{{name}}</h1>
                 <div class="page__hd">
                     <h1 class="page__title">Button</h1>
                     <p class="page__desc">按钮</p>
