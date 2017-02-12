@@ -8,6 +8,7 @@ import dialog from './components/dialog/index';
 import { Footer, FooterLink, FooterLinks, FooterText } from './components/footer/index'
 import Label from './components/label/index'
 import SearchBar from './components/search-bar/index'
+import Switch from './components/switch/index'
 
 export {
     version,
@@ -21,5 +22,6 @@ export {
     FooterLink,
     FooterText,
     Label,
-    SearchBar
+    SearchBar,
+    Switch
 }
