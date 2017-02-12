@@ -92,7 +92,7 @@ export default class Hello extends Omi.Component {
                     <p class="page__desc">搜索栏</p>
                 </div>
                 <div class="page__bd page__bd_spacing">
-                    <SearchBar "/>
+                    <SearchBar data-placeholder="我是搜索框" />
                 </div>
                 <div class="page__hd">
                     <h1 class="page__title">List</h1>

@@ -2,6 +2,9 @@ import Omi from 'omi/dist/omi'
 
 export default class SearchBar extends Omi.Component{
     constructor(data) {
+        data = Object.assign({
+            placeholder:'搜索'
+        },data);
         super(data);
     }
 
@@ -31,12 +34,12 @@ export default class SearchBar extends Omi.Component{
             <form class="weui-search-bar__form">
                 <div class="weui-search-bar__box">
                     <i class="weui-icon-search"></i>
-                    <input type="search" class="weui-search-bar__input" ref="searchInput" placeholder="搜索" required="">
+                    <input type="search" class="weui-search-bar__input" ref="searchInput" placeholder="${this.data.placeholder}" required="">
                     <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
                 </div>
                 <label class="weui-search-bar__label" id="searchText">
                     <i class="weui-icon-search"></i>
-                    <span>搜索</span>
+                    <span>${this.data.placeholder}</span>
                 </label>
             </form>
             <a href="javascript:" class="weui-search-bar__cancel-btn" onclick="cancel(event)">取消</a>
