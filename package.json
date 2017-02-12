@@ -1,10 +1,11 @@
 {
   "name": "omi-weui",
   "version": "0.1.0",
-  "description": "Weui Elements For Omi",
+  "description": "WeUI Elements For Omi",
   "main": "index.js",
   "scripts": {
     "dev": "node build/dev-server.js",
+    "dist": "webpack",
     "lint": "eslint src",
     "test": "karma start test/karma.conf.js"
   },
