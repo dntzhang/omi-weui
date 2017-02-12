@@ -24,4 +24,5 @@ app.use(webpackHotMiddleware(compiler, {
 
 app.listen(port, function () {
     console.log("Listening on port " + port + '\n')
+    console.log("Please open http://localhost:" + port + " in browser" + '\n')
 });
