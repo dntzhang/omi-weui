@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node build/dev-server.js",
+    "docs": "NODE_ENV=production node build/docs.js docs",
     "dist": "webpack",
     "lint": "eslint src",
     "test": "karma start test/karma.conf.js"
@@ -45,6 +46,7 @@
     "karma-webpack": "^2.0.2",
     "less-loader": "^2.2.3",
     "lodash": "^4.17.4",
+    "ora": "^1.1.0",
     "postcss-loader": "^1.2.2",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1",
