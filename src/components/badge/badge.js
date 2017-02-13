@@ -23,12 +23,12 @@ export default class Badge extends Omi.Component {
         `
     }
     render() {
-        const { className, dot, preset } = this.data;
+        const { classname, dot, preset } = this.data;
         const cls = classNames({
             'weui-badge': true,
             'weui-badge_dot': dot,
             [preset]: preset,
-            [className]: className
+            [classname]: classname
         });
         return `
             <span class="${cls}">{{content}}</span>

@@ -6,10 +6,10 @@ export default class Article extends Omi.Component {
         super(data)
     }
     render(){
-        const { className } = this.data;
+        const { classname } = this.data;
         const cls = classNames({
             'weui-article': true,
-            [className]: className
+            [classname]: classname
         });
         return `
             <article class="${cls}">
