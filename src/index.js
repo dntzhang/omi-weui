@@ -11,6 +11,7 @@ import SearchBar from './components/search-bar/index';
 import Switch from './components/switch/index';
 import Slider from './components/slider/index';
 import Icon from './components/icon/index';
+import Badge from './components/badge/index';
 
 export {
     version,
@@ -27,5 +28,6 @@ export {
     SearchBar,
     Switch,
     Slider,
-    Icon
+    Icon,
+    Badge
 }
