@@ -12,6 +12,7 @@ import Switch from './components/switch/index';
 import Slider from './components/slider/index';
 import Icon from './components/icon/index';
 import Badge from './components/badge/index';
+import { Gallery, GalleryDelete } from './components/gallery/index'
 
 export {
     version,
@@ -29,5 +30,7 @@ export {
     Switch,
     Slider,
     Icon,
-    Badge
+    Badge,
+    Gallery,
+    GalleryDelete
 }
