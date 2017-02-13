@@ -29,6 +29,7 @@ export default class Badge extends Omi.Component {
             'weui-badge_dot': dot,
             [preset]: preset,
             [classname]: classname
+
         });
         return `
             <span class="${cls}">{{content}}</span>
