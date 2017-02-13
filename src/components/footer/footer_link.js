@@ -6,10 +6,10 @@ export default class FooterLink extends Omi.Component {
         super(data)
     }
     render() {
-        const { className } = this.data;
+        const { classname } = this.data;
         const cls = classNames({
             'weui-footer__link': true,
-            [className]: className
+            [classname]: classname
         });
         return `
             <div class="${cls}">{{{content}}}</div>
