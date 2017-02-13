@@ -6,10 +6,10 @@ export default class Label extends Omi.Component {
         super(data)
     }
     render(){
-        const { className } = this.data;
+        const { classname } = this.data;
         const cls = classNames({
             'weui-label': true,
-            [className]: className
+            [classname]: classname
         });
         return `
             <div>
