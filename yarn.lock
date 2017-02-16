@@ -3725,9 +3725,9 @@ obuf@^1.0.0, obuf@^1.1.0:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/obuf/download/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
 
-omi@^0.1.6:
-  version "0.1.6"
-  resolved "http://registry.npm.taobao.org/omi/download/omi-0.1.6.tgz#a9aa5a929ec6dce65d5869fe20c774c6c1a9a57e"
+omi@^0.1.11:
+  version "0.1.11"
+  resolved "http://registry.npm.taobao.org/omi/download/omi-0.1.11.tgz#e904d4d54f4baffa32a9548874cc8b3358bc0389"
 
 on-finished@~2.3.0:
   version "2.3.0"

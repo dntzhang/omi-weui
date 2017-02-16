@@ -23,7 +23,7 @@
   "homepage": "https://github.com/pasturn/omi-weui#readme",
   "dependencies": {
     "classnames": "^2.2.5",
-    "omi": "^0.1.10"
+    "omi": "^0.1.11"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
