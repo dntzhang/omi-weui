@@ -1,5 +1,5 @@
 import Omi from 'omi/dist/omi'
-import { Button, List, Progress, Article, dialog, SearchBar, Switch, Slider} from '../../src/index'
+import { Button, List, Progress, Article, dialog, SearchBar, Switch, Slider, Grids} from '../../src/index'
 
 
 Omi.makeHTML('Button', Button);
@@ -9,6 +9,7 @@ Omi.makeHTML('Article', Article);
 Omi.makeHTML('SearchBar', SearchBar);
 Omi.makeHTML('Switch', Switch);
 Omi.makeHTML('Slider', Slider);
+Omi.makeHTML('Grids', Grids);
 
 export default class Hello extends Omi.Component {
     constructor(data) {
@@ -31,9 +32,25 @@ export default class Hello extends Omi.Component {
                     </p>
                 </section>
             </section>`
-        }
+        };
+        this.gridData =  {items: [
+            {
+                icon: '<img src="" />',
+                label: 'test1'
+            },
+            {
+                icon: '<img src="" />',
+                label: 'test2'
+            },
+            {
+                icon: '<img src="" />',
+                label: 'test3'
+            }
+        ]}
     }
-
+    install(){
+        console.log(this)
+    }
     style () {
         return  `
             h1{
@@ -133,8 +150,11 @@ export default class Hello extends Omi.Component {
                 <div class="page__bd page__bd_spacing">
                     <Slider data-value="50" />
                     <br>
-                    <Slider data-value="30" />
+                    <Slider data-value="30"  />
                 </div>
+           
+                <Grids data="gridData"/>
+     
                 <a href="https://github.com/AlloyTeam/omi" target="_blank" style="position: absolute;z-index: 1000; right: 0; top: 0;">
                     <img src="http://alloyteam.github.io/omi/asset/github.png" alt="" />
                 </a>
@@ -142,4 +162,6 @@ export default class Hello extends Omi.Component {
         `;
     }
 }
+
+
 
