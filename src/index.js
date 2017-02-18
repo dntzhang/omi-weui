@@ -13,6 +13,7 @@ import Slider from './components/slider/index';
 import Icon from './components/icon/index';
 import Badge from './components/badge/index';
 import { Gallery, GalleryDelete } from './components/gallery/index'
+import { Grids, Grid, GridIcon, GridLabel } from './components/grid/index'
 
 export {
     version,
@@ -32,5 +33,9 @@ export {
     Icon,
     Badge,
     Gallery,
-    GalleryDelete
+    GalleryDelete,
+    Grids,
+    Grid,
+    GridIcon,
+    GridLabel
 }
