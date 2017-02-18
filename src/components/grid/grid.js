@@ -9,7 +9,6 @@ Omi.makeHTML('GridLabel', GridLabel);
 export default class Grid extends Omi.Component {
     constructor (data) {
         super(data);
-        console.log(data)
         this.data = Object.assign(data, {
             label: data.label || '',
             icon: data.icon || false
