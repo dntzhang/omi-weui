@@ -15,6 +15,7 @@ import Badge from './components/badge/index';
 import { Gallery, GalleryDelete } from './components/gallery/index'
 import { Grids, Grid, GridIcon, GridLabel } from './components/grid/index'
 import Toptips from './components/toptips/index'
+import Mask from './components/mask/index'
 
 export {
     version,
@@ -39,5 +40,6 @@ export {
     Grid,
     GridIcon,
     GridLabel,
-    Toptips
+    Toptips,
+    Mask
 }
