@@ -30,7 +30,7 @@ export default class Toptips extends Omi.Component {
             [classname]: classname
         });
         return `
-            <div class="${cls}" style="display:${show == 'true' ? 'block': 'none'}">
+            <div class="${cls}" style="display:${show ? 'block': 'none'}">
                 {{{content}}}
             </div>
         `
