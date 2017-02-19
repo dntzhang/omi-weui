@@ -1,5 +1,8 @@
 import Omi from 'omi/dist/omi'
 import classNames from 'classnames';
+import OmiFinger from 'omi-finger';
+
+OmiFinger.init();
 
 export default class Button extends Omi.Component{
     constructor(data) {
@@ -14,8 +17,8 @@ export default class Button extends Omi.Component{
         );
     }
 
-    handleClick(){
-        this.data.onClick&&this.data.onClick();
+    handleTap(evt){
+        this.data.onTap&&this.data.onTap(evt);
     }
 
     render(){
@@ -35,7 +38,7 @@ export default class Button extends Omi.Component{
             [classname]: classname
         });
         return `
-            <${Component} ${href} onclick="handleClick()" class="${cls}">{{text}}{{{children}}}</${Component}>
+            <${Component} omi-finger ${href} onTap="handleTap" class="${cls}">{{text}}{{{children}}}</${Component}>
         `;
     }
 }

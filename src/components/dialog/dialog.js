@@ -1,4 +1,5 @@
 ﻿import Omi from 'omi/dist/omi'
+import OmiFinger from 'omi-finger';
 
 class Confirm extends Omi.Component{
     constructor(data) {
@@ -40,8 +41,8 @@ class Confirm extends Omi.Component{
                 <div class="weui-dialog__hd"><strong class="weui-dialog__title">${this.data.title}</strong></div>
                 <div class="weui-dialog__bd">${this.data.msg}</div>
                 <div class="weui-dialog__ft">
-                    <a href="javascript:;" onclick="no()" class="weui-dialog__btn weui-dialog__btn_default">${this.data.noBtn}</a>
-                    <a href="javascript:;" onclick="yes()" class="weui-dialog__btn weui-dialog__btn_primary">${this.data.yesBtn}</a>
+                    <a href="javascript:;" omi-finger onTap="no" class="weui-dialog__btn weui-dialog__btn_default">${this.data.noBtn}</a>
+                    <a href="javascript:;" omi-finger onTap="yes" class="weui-dialog__btn weui-dialog__btn_primary">${this.data.yesBtn}</a>
                 </div>
             </div>
         </div>

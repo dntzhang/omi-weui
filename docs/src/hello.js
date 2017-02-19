@@ -94,7 +94,7 @@ export default class Hello extends Omi.Component {
                     <p class="page__desc">Dailog</p>
                 </div>
                 <div class="page__bd page__bd_spacing">
-                    <Button data-text="点我显示弹出层" data-size="small" onClick="showDialog" data-href="javascript:;"  data-aaa="test"/>
+                    <Button data-text="点我显示弹出层" data-size="small" onTap="showDialog" data-href="javascript:;"  data-aaa="test"/>
                 </div>
                 <div class="page__hd">
                     <h1 class="page__title">SearchBar</h1>
