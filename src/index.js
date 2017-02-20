@@ -16,6 +16,7 @@ import { Gallery, GalleryDelete } from './components/gallery/index'
 import { Grids, Grid, GridIcon, GridLabel } from './components/grid/index'
 import Toptips from './components/toptips/index'
 import Mask from './components/mask/index'
+import Toast from './components/toast/index'
 
 export {
     version,
@@ -41,5 +42,6 @@ export {
     GridIcon,
     GridLabel,
     Toptips,
-    Mask
+    Mask,
+    Toast
 }

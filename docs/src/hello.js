@@ -1,5 +1,5 @@
 import Omi from 'omi/dist/omi'
-import { Button, List, Progress, Article, dialog, SearchBar, Switch, Slider, Grids, Toptips} from '../../src/index'
+import { Button, List, Progress, Article, dialog, SearchBar, Switch, Slider, Grids, Toptips, Toast} from '../../src/index'
 
 
 Omi.makeHTML('Button', Button);
@@ -11,6 +11,7 @@ Omi.makeHTML('Switch', Switch);
 Omi.makeHTML('Slider', Slider);
 Omi.makeHTML('Grids', Grids);
 Omi.makeHTML('Toptips', Toptips);
+Omi.makeHTML('Toast', Toast);
 
 export default class Hello extends Omi.Component {
     constructor(data) {
@@ -48,9 +49,11 @@ export default class Hello extends Omi.Component {
                 label: 'test3'
             }
         ]}
-    }
-    install(){
-        console.log(this)
+        this.toastData = {
+            show: true,
+            icon: 'loading',
+            content: '加载中'
+        }
     }
     style () {
         return  `
@@ -157,7 +160,7 @@ export default class Hello extends Omi.Component {
                     <Toptips data-show="false" data-type="primary" data-content="a"/>
                    </div>
                 <Grids data="gridData"/>
-                 
+                 <Toast data="toastData"/>
                 <a href="https://github.com/AlloyTeam/omi" target="_blank" style="position: absolute;z-index: 1000; right: 0; top: 0;">
                     <img src="http://alloyteam.github.io/omi/asset/github.png" alt="" />
                 </a>
