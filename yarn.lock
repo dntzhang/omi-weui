@@ -56,6 +56,10 @@ align-text@^0.1.1, align-text@^0.1.3:
     longest "^1.0.1"
     repeat-string "^1.5.2"
 
+alloyfinger@^0.1.4:
+  version "0.1.5"
+  resolved "http://registry.npm.taobao.org/alloyfinger/download/alloyfinger-0.1.5.tgz#69e087432c88157a40307dc27216cbf833053728"
+
 alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/alphanum-sort/download/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
@@ -3725,9 +3729,16 @@ obuf@^1.0.0, obuf@^1.1.0:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/obuf/download/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
 
-omi@^0.3.0:
-  version "0.3.0"
-  resolved "http://registry.npm.taobao.org/omi/download/omi-0.3.0.tgz#47e914a98889aad4b22cbb11ce8064f62d3a2a99"
+omi-finger@latest:
+  version "0.1.2"
+  resolved "http://registry.npm.taobao.org/omi-finger/download/omi-finger-0.1.2.tgz#953399e00651a89c67673e34d9fdee14c4589131"
+  dependencies:
+    alloyfinger "^0.1.4"
+    omi latest
+
+omi@latest:
+  version "0.3.3"
+  resolved "http://registry.npm.taobao.org/omi/download/omi-0.3.3.tgz#b90e1af519ae4bef7d7d33a79752334dde7a085f"
 
 on-finished@~2.3.0:
   version "2.3.0"
