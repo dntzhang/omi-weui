@@ -4,11 +4,10 @@ import classNames from 'classnames'
 export default class Icon extends Omi.Component {
     constructor(data) {
         super(data);
-        data = Object.assign(data, {
+        this.data = Object.assign(data, {
             value: data.value || 'success',
             size: data.size || 'small'
         })
-        console.log(data)
     }
     render(){
         const { loading, size, primary, value, classname} = this.data;
