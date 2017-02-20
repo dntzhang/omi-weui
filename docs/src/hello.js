@@ -50,7 +50,7 @@ export default class Hello extends Omi.Component {
             }
         ]}
         this.toastData = {
-            show: true,
+            show: false,
             icon: 'loading',
             content: '加载中'
         }

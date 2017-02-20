@@ -17,6 +17,7 @@ import { Grids, Grid, GridIcon, GridLabel } from './components/grid/index'
 import Toptips from './components/toptips/index'
 import Mask from './components/mask/index'
 import Toast from './components/toast/index'
+import LoadMore from './components/loadmore/index'
 
 export {
     version,
@@ -43,5 +44,6 @@ export {
     GridLabel,
     Toptips,
     Mask,
-    Toast
+    Toast,
+    LoadMore
 }
