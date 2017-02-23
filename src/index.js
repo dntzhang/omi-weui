@@ -1,6 +1,6 @@
 import version from './version';
 
-import Button from './components/button/index';
+import { Button, ButtonArea, ButtonPreview } from './components/button/index';
 import List from './components/list/index';
 import Progress from './components/progress/index';
 import Article from './components/aritcle/index';
@@ -22,6 +22,8 @@ import LoadMore from './components/loadmore/index'
 export {
     version,
     Button,
+    ButtonArea,
+    ButtonPreview,
     List,
     Progress,
     Article,
