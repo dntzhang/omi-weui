@@ -4,6 +4,7 @@ import { Button, ButtonArea, ButtonPreview } from './components/button/index';
 import List from './components/list/index';
 import Progress from './components/progress/index';
 import Article from './components/aritcle/index';
+import { CellBody, CellsTitle, CellsTips, Cells, CellHeader, CellFooter} from './components/cell/index'
 import dialog from './components/dialog/index';
 import { Footer, FooterLink, FooterLinks, FooterText } from './components/footer/index';
 import Label from './components/label/index';
@@ -25,6 +26,12 @@ export {
     ButtonArea,
     ButtonPreview,
     List,
+    CellBody,
+    CellFooter,
+    CellHeader,
+    CellsTips,
+    CellsTitle,
+    Cells,
     Progress,
     Article,
     dialog,
