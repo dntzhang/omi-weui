@@ -1,4 +1,5 @@
 const express = require("express");
+const open = require("open");
 const webpackDevMiddleware = require("webpack-dev-middleware");
 const webpackHotMiddleware = require("webpack-hot-middleware");
 const webpack = require("webpack");
@@ -28,3 +29,6 @@ app.listen(port, function () {
     console.log("Listening on port " + port + '\n')
     console.log("Please open http://localhost:" + port + " in browser" + '\n')
 });
+
+open("http://localhost:" + port);
+

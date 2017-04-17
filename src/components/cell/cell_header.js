@@ -1,4 +1,4 @@
-import Omi from 'omi/dist/omi'
+import Omi from 'omi'
 import classNames from 'classnames'
 
 export default class CellHeader extends Omi.Component{

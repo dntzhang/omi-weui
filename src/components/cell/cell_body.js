@@ -1,9 +1,11 @@
-import Omi from 'omi/dist/omi'
+import Omi from 'omi'
 import classNames from 'classnames'
 
 export default class CellBody extends Omi.Compoent{
     constructor(data){
         super(data);
+    }
+    install(){
         this.data = Object.assign({
             primary: data.primary || false
         }, data)

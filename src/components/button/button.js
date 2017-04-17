@@ -18,13 +18,13 @@ export default class Button extends Omi.Component{
     }
 
     handleTap(evt){
-        this.data.onTap&&this.data.onTap(evt);
+        this.data.onTap && this.data.onTap(evt);
     }
 
     render(){
-        const { classname, size, type, plain,　...other} = this.data;
-        const Component = this.data.href || type == 'vcode' ? 'a' : 'button';
-        const href = this.data.href ? `href="${this.data.href}"` : null;
+        const { classname, size, type, plain,...other} = this.data;
+        const Component = (this.data.href || type == 'vcode') ? 'a' : 'button';
+        const href = this.data.href ? "href="+  this.data.href :null;
         const cls = this.data.type == 'vcode' ? classNames('weui-vcode-btn', {[classname]: classname}) : classNames({
             'weui-btn': true,
             'weui-btn_mini': size === 'small',
@@ -34,11 +34,12 @@ export default class Button extends Omi.Component{
             'weui-btn_plain-primary': type === 'primary' && plain,
             'weui-btn_plain-default': type === 'default' && plain,
             'weui-btn_disabled': this.data.disabled && !plain,
+            'weui-btn_loading': this.data.loading,
             'weui-btn_plain-disabled': this.data.disabled && plain,
             [classname]: classname
         });
         return `
-            <${Component} omi-finger ${href} onTap="handleTap" class="${cls}">{{text}}{{{children}}}</${Component}>
+            <${Component} omi-finger {{href}} onTap="handleTap" class="${cls}">{{text}}{{{children}}}</${Component}>
         `;
     }
 }
