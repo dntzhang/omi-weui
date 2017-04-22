@@ -23,7 +23,7 @@ module.exports = merge(baseWebpackConfig, {
                 'NODE_ENV': JSON.stringify('docs')
             }
         }),
-        new ExtractTextPlugin("styles.[hash].css"),
+        new ExtractTextPlugin(config.assetsSubDirectory + "/styles.[hash].css"),
         new webpack.LoaderOptionsPlugin({
             minimize: true,
             debug: false

@@ -1,5 +1,5 @@
-import Omi from 'omi/dist/omi'
-import Hello from './hello'
+import Omi from 'omi'
+import App from './app'
 import './index.css'
 import './omi-weui.min.css'
 
@@ -7,6 +7,4 @@ if(module.hot) {
     module.hot.accept();
 }
 
-Omi.render(new Hello({ name:"Omi-WeUI" }),"body");
-
-
+Omi.render(new App(),"body");

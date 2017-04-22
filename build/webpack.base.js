@@ -7,9 +7,10 @@ module.exports = {
         config.entry.app,
     ],
     output: {
-        filename: '[name].[hash].js',
+        filename: config.assetsSubDirectory + '/[name].[hash].js',
         path: config.assetsRoot,
         publicPath: config.assetsPublicPath,
+        chunkFilename: config.assetsSubDirectory +'/[name].[chunkhash:8].chunk.js',
         sourceMapFilename: '[name].map'
     },
     module: {
@@ -41,8 +42,14 @@ module.exports = {
                 })
             },
             {
-                test: /\.(jpg|png|gif)$/,
-                use: "file-loader"
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: {
+                    loader: "url-loader",
+                    query: {
+                        limit: 8192,
+                        name: 'static/[name].[ext]'
+                    }
+                }
             },
             {
                 test: /\.(woff|woff2|eot|ttf|svg)$/,

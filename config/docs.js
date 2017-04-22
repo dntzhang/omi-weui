@@ -10,7 +10,7 @@ module.exports = {
     },
     build: {
         env: '"production"',
-        assetsSubDirectory: '',
+        assetsSubDirectory: 'static',
         assetsPublicPath: './',
         productionGzip: false,
         productionGzipExtensions: ['js', 'css']

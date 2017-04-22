@@ -18,6 +18,6 @@ module.exports = merge(baseWebpackConfig, {
             inject: true
         }),
         new webpack.NamedModulesPlugin(),
-        new ExtractTextPlugin("styles.css"),
+        new ExtractTextPlugin(config.assetsSubDirectory + "/styles.[hash].css"),
     ]
 });

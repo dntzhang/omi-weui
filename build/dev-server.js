@@ -14,7 +14,7 @@ const app = express();
 const compiler = webpack(webpackConfig);
 
 app.use(webpackDevMiddleware(compiler, {
-    noInfo: true,
+    noInfo: false,
     publicPath: webpackConfig.output.publicPath,
     stats: {
         colors: true,
