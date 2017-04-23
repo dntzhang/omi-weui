@@ -9,11 +9,13 @@ export default class CellHeader extends Omi.Component{
         const {classname, primary} = this.data;
         const cls = classNames({
             'weui-cell__hd': true,
-            'weui-cell_primary': primary,
-            [classname]: classNames
+            'weui-cell_primary': !!primary,
+            [classname]: classname
         });
         return `
-            <div class="${cls}">{{{content}}}</div>
+            <div class="${cls}">
+                  <slot></slot>
+            </div>
         `
     }
 }

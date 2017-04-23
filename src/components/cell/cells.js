@@ -1,18 +1,22 @@
-import Omi from 'omi'
+import Omi from 'omi/dist/omi'
 import classNames from 'classnames';
+
+
 
 export default class Cells extends Omi.Component{
     constructor(data){
         super(data)
     }
     render(){
-        const {classname} = this.data;
+        const {classname, items} = this.data;
         const cls = classNames({
-            'weui-cells': true,
+            'weui-cell': true,
             [classname]: classname
         })
         return `
-            <div class="${cls}">{{{content}}}</div>
+            <div class="weui-cells">
+                <slot></slot>
+            </div>
         `
     }
 }

@@ -16,7 +16,9 @@ export default class CellFooter extends Omi.Component{
             [classname]: classname
         });
         return `
-            <div class="${cls}">{{{content}}}</div>
+            <div class="${cls}">
+                <slot></slot>
+            </div>
         `
     }
 }

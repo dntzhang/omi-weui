@@ -79,7 +79,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 55);
+/******/ 	return __webpack_require__(__webpack_require__.s = 56);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -3136,7 +3136,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _icon = __webpack_require__(44);
+var _icon = __webpack_require__(45);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3155,10 +3155,56 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Cells = exports.CellsTitle = exports.CellsTips = exports.CellHeader = exports.CellFooter = exports.CellBody = undefined;
+
+var _cell_body = __webpack_require__(31);
+
+var _cell_body2 = _interopRequireDefault(_cell_body);
+
+var _cell_footer = __webpack_require__(32);
+
+var _cell_footer2 = _interopRequireDefault(_cell_footer);
+
+var _cell_header = __webpack_require__(33);
+
+var _cell_header2 = _interopRequireDefault(_cell_header);
+
+var _cells_tips = __webpack_require__(35);
+
+var _cells_tips2 = _interopRequireDefault(_cells_tips);
+
+var _cells_title = __webpack_require__(36);
+
+var _cells_title2 = _interopRequireDefault(_cells_title);
+
+var _cells = __webpack_require__(34);
+
+var _cells2 = _interopRequireDefault(_cells);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// 还少一个Cell组件
+exports.CellBody = _cell_body2.default;
+exports.CellFooter = _cell_footer2.default;
+exports.CellHeader = _cell_header2.default;
+exports.CellsTips = _cells_tips2.default;
+exports.CellsTitle = _cells_title2.default;
+exports.Cells = _cells2.default;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _mask = __webpack_require__(48);
+var _mask = __webpack_require__(49);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3170,7 +3216,7 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3190,11 +3236,11 @@ var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _grid_icon = __webpack_require__(5);
+var _grid_icon = __webpack_require__(6);
 
 var _grid_icon2 = _interopRequireDefault(_grid_icon);
 
-var _grid_label = __webpack_require__(6);
+var _grid_label = __webpack_require__(7);
 
 var _grid_label2 = _interopRequireDefault(_grid_label);
 
@@ -3250,7 +3296,7 @@ var Grid = function (_Omi$Component) {
 exports.default = Grid;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3305,7 +3351,7 @@ var GridIcon = function (_Omi$Component) {
 exports.default = GridIcon;
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3360,7 +3406,7 @@ var GridLabel = function (_Omi$Component) {
 exports.default = GridLabel;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -3442,7 +3488,7 @@ exports.default = GridLabel;
 })();
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3464,7 +3510,7 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3486,7 +3532,7 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3513,47 +3559,6 @@ exports.Button = _button2.default;
 exports.ButtonArea = _button_area2.default;
 
 /***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Cells = exports.CellsTitle = exports.CellsTips = exports.CellHeader = exports.CellFooter = undefined;
-
-var _cell_footer = __webpack_require__(31);
-
-var _cell_footer2 = _interopRequireDefault(_cell_footer);
-
-var _cell_header = __webpack_require__(32);
-
-var _cell_header2 = _interopRequireDefault(_cell_header);
-
-var _cells_tips = __webpack_require__(34);
-
-var _cells_tips2 = _interopRequireDefault(_cells_tips);
-
-var _cells_title = __webpack_require__(35);
-
-var _cells_title2 = _interopRequireDefault(_cells_title);
-
-var _cells = __webpack_require__(33);
-
-var _cells2 = _interopRequireDefault(_cells);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.CellFooter = _cell_footer2.default;
-exports.CellHeader = _cell_header2.default;
-exports.CellsTips = _cells_tips2.default;
-exports.CellsTitle = _cells_title2.default;
-exports.Cells = _cells2.default; // 还少一个Cell组件
-// import CellBody from './cell_body'
-
-/***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3564,7 +3569,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _dialog = __webpack_require__(36);
+var _dialog = __webpack_require__(37);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3587,19 +3592,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.FooterLink = exports.FooterLinks = exports.FooterText = exports.Footer = undefined;
 
-var _footer = __webpack_require__(37);
+var _footer = __webpack_require__(38);
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _footer_text = __webpack_require__(40);
+var _footer_text = __webpack_require__(41);
 
 var _footer_text2 = _interopRequireDefault(_footer_text);
 
-var _footer_links = __webpack_require__(39);
+var _footer_links = __webpack_require__(40);
 
 var _footer_links2 = _interopRequireDefault(_footer_links);
 
-var _footer_link = __webpack_require__(38);
+var _footer_link = __webpack_require__(39);
 
 var _footer_link2 = _interopRequireDefault(_footer_link);
 
@@ -3622,11 +3627,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.GalleryDelete = exports.Gallery = undefined;
 
-var _gallery = __webpack_require__(41);
+var _gallery = __webpack_require__(42);
 
 var _gallery2 = _interopRequireDefault(_gallery);
 
-var _gallery_delete = __webpack_require__(42);
+var _gallery_delete = __webpack_require__(43);
 
 var _gallery_delete2 = _interopRequireDefault(_gallery_delete);
 
@@ -3647,19 +3652,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.GridLabel = exports.GridIcon = exports.Grid = exports.Grids = undefined;
 
-var _grids = __webpack_require__(43);
+var _grids = __webpack_require__(44);
 
 var _grids2 = _interopRequireDefault(_grids);
 
-var _grid = __webpack_require__(4);
+var _grid = __webpack_require__(5);
 
 var _grid2 = _interopRequireDefault(_grid);
 
-var _grid_icon = __webpack_require__(5);
+var _grid_icon = __webpack_require__(6);
 
 var _grid_icon2 = _interopRequireDefault(_grid_icon);
 
-var _grid_label = __webpack_require__(6);
+var _grid_label = __webpack_require__(7);
 
 var _grid_label2 = _interopRequireDefault(_grid_label);
 
@@ -3681,7 +3686,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _label = __webpack_require__(45);
+var _label = __webpack_require__(46);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3703,7 +3708,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _list = __webpack_require__(46);
+var _list = __webpack_require__(47);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3725,7 +3730,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _loadmore = __webpack_require__(47);
+var _loadmore = __webpack_require__(48);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3747,7 +3752,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _progress = __webpack_require__(49);
+var _progress = __webpack_require__(50);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3769,7 +3774,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _searchBar = __webpack_require__(50);
+var _searchBar = __webpack_require__(51);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3791,7 +3796,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _slider = __webpack_require__(51);
+var _slider = __webpack_require__(52);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3813,7 +3818,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _switch = __webpack_require__(52);
+var _switch = __webpack_require__(53);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3835,7 +3840,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _toast = __webpack_require__(53);
+var _toast = __webpack_require__(54);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3857,7 +3862,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _toptips = __webpack_require__(54);
+var _toptips = __webpack_require__(55);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -4325,7 +4330,7 @@ var _icon = __webpack_require__(2);
 
 var _icon2 = _interopRequireDefault(_icon);
 
-var _omiFinger = __webpack_require__(7);
+var _omiFinger = __webpack_require__(8);
 
 var _omiFinger2 = _interopRequireDefault(_omiFinger);
 
@@ -4497,6 +4502,66 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var CellBody = function (_Omi$Component) {
+    _inherits(CellBody, _Omi$Component);
+
+    function CellBody(data) {
+        _classCallCheck(this, CellBody);
+
+        return _possibleConstructorReturn(this, (CellBody.__proto__ || Object.getPrototypeOf(CellBody)).call(this, data));
+    }
+
+    _createClass(CellBody, [{
+        key: 'render',
+        value: function render() {
+            var _data = this.data,
+                classname = _data.classname,
+                primary = _data.primary;
+
+            var cls = (0, _classnames2.default)(_defineProperty({
+                'weui-cell__bd': true,
+                'weui-cell_primary': primary
+            }, classname, classname));
+            return '\n            <div class="' + cls + '">\n                <slot></slot>     \n            </div>\n        ';
+        }
+    }]);
+
+    return CellBody;
+}(_omi2.default.Component);
+
+exports.default = CellBody;
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _omi = __webpack_require__(0);
+
+var _omi2 = _interopRequireDefault(_omi);
+
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var CellFooter = function (_Omi$Component) {
     _inherits(CellFooter, _Omi$Component);
 
@@ -4522,7 +4587,7 @@ var CellFooter = function (_Omi$Component) {
                 'weui-cell__ft': true,
                 'weui-cell_primary': primary
             }, classname, classname));
-            return '\n            <div class="' + cls + '">{{{content}}}</div>\n        ';
+            return '\n            <div class="' + cls + '">\n                <slot></slot>\n            </div>\n        ';
         }
     }]);
 
@@ -4532,7 +4597,7 @@ var CellFooter = function (_Omi$Component) {
 exports.default = CellFooter;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4580,9 +4645,9 @@ var CellHeader = function (_Omi$Component) {
 
             var cls = (0, _classnames2.default)(_defineProperty({
                 'weui-cell__hd': true,
-                'weui-cell_primary': primary
-            }, classname, _classnames2.default));
-            return '\n            <div class="' + cls + '">{{{content}}}</div>\n        ';
+                'weui-cell_primary': !!primary
+            }, classname, classname));
+            return '\n            <div class="' + cls + '">\n                  <slot></slot>\n            </div>\n        ';
         }
     }]);
 
@@ -4592,7 +4657,7 @@ var CellHeader = function (_Omi$Component) {
 exports.default = CellHeader;
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4634,12 +4699,14 @@ var Cells = function (_Omi$Component) {
     _createClass(Cells, [{
         key: 'render',
         value: function render() {
-            var classname = this.data.classname;
+            var _data = this.data,
+                classname = _data.classname,
+                items = _data.items;
 
             var cls = (0, _classnames2.default)(_defineProperty({
-                'weui-cells': true
+                'weui-cell': true
             }, classname, classname));
-            return '\n            <div class="' + cls + '">{{{content}}}</div>\n        ';
+            return '\n            <div class="weui-cells">\n                <slot></slot>\n            </div>\n        ';
         }
     }]);
 
@@ -4649,7 +4716,7 @@ var Cells = function (_Omi$Component) {
 exports.default = Cells;
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4706,7 +4773,7 @@ var CellsTips = function (_Omi$Component) {
 exports.default = CellsTips;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4753,7 +4820,7 @@ var CellsTitle = function (_Omi$Component) {
             var cls = (0, _classnames2.default)(_defineProperty({
                 'weui-cells__title': true
             }, classname, classname));
-            return '\n            <div class="' + cls + '">{{{content}}}</div>\n        ';
+            return '\n            <div class="' + cls + '">{{title}}</div>\n        ';
         }
     }]);
 
@@ -4763,7 +4830,7 @@ var CellsTitle = function (_Omi$Component) {
 exports.default = CellsTitle;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4779,7 +4846,7 @@ var _omi = __webpack_require__(0);
 
 var _omi2 = _interopRequireDefault(_omi);
 
-var _omiFinger = __webpack_require__(7);
+var _omiFinger = __webpack_require__(8);
 
 var _omiFinger2 = _interopRequireDefault(_omiFinger);
 
@@ -4861,7 +4928,7 @@ dialog.confirm = function (data) {
 exports.default = dialog;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4918,7 +4985,7 @@ var Footer = function (_Omi$Component) {
 exports.default = Footer;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4975,7 +5042,7 @@ var FooterLink = function (_Omi$Component) {
 exports.default = FooterLink;
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5032,7 +5099,7 @@ var FooterLinks = function (_Omi$Component) {
 exports.default = FooterLinks;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5089,7 +5156,7 @@ var FooterText = function (_Omi$Component) {
 exports.default = FooterText;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5155,7 +5222,7 @@ var Gallery = function (_Omi$Component) {
 exports.default = Gallery;
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5218,7 +5285,7 @@ var GalleryDelete = function (_Omi$Component) {
 exports.default = GalleryDelete;
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5238,7 +5305,7 @@ var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _grid = __webpack_require__(4);
+var _grid = __webpack_require__(5);
 
 var _grid2 = _interopRequireDefault(_grid);
 
@@ -5289,7 +5356,7 @@ var Grids = function (_Omi$Component) {
 exports.default = Grids;
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5358,7 +5425,7 @@ var Icon = function (_Omi$Component) {
 exports.default = Icon;
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5415,7 +5482,7 @@ var Label = function (_Omi$Component) {
 exports.default = Label;
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5431,6 +5498,8 @@ var _omi = __webpack_require__(0);
 
 var _omi2 = _interopRequireDefault(_omi);
 
+var _cell = __webpack_require__(3);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -5438,6 +5507,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+_omi2.default.makeHTML('CellsTitle', _cell.CellsTitle);
+_omi2.default.makeHTML('Cells', _cell.Cells);
+_omi2.default.makeHTML('CellHeader', _cell.CellHeader);
+_omi2.default.makeHTML('CellBody', _cell.CellBody);
+_omi2.default.makeHTML('CellFooter', _cell.CellFooter);
 
 var List = function (_Omi$Component) {
     _inherits(List, _Omi$Component);
@@ -5451,7 +5526,7 @@ var List = function (_Omi$Component) {
     _createClass(List, [{
         key: 'render',
         value: function render() {
-            return '\n        <div class="weui-cells">\n            {{#items}}\n            <a class="weui-cell weui-cell_access" href="javascript:;">\n                <div class="weui-cell__bd">\n                    <p>{{name}}</p>\n                </div>\n                <div class="weui-cell__ft">\n                </div>\n            </a>\n            {{/items}}\n        </div>\n        ';
+            return '\n        <div>\n            <CellsTitle data-title={{title}} />\n            <Cells slot-index="0">\n                <div>\n                {{#items}}\n                    <{{#link}}a  href={{link}} {{/link}}{{^link}}div{{/link}} class="weui-cell {{#link}}weui-cell_access{{/link}}">\n                        {{#imageUrl}}\n                            <CellHeader>\n                                <img style="width:20px;margin-right:5px;display:block" src={{imageUrl}} />\n                            </CellHeader>\n                        {{/imageUrl}}\n                        <CellBody slot-index="0" >\n                            <p>{{{title}}}</p>\n                        </CellBody>\n                        <CellFooter slot-index="1">\n                           <span>{{value}}</span>           \n                        </CellFooter>\n                    </{{#link}}a{{/link}}{{^link}}div{{/link}}>  \n               {{/items}}\n               </div>\n            </Cells>\n        </div>\n        ';
         }
     }]);
 
@@ -5461,7 +5536,7 @@ var List = function (_Omi$Component) {
 exports.default = List;
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5529,7 +5604,7 @@ var LoadMore = function (_Omi$Component) {
 exports.default = LoadMore;
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5592,7 +5667,7 @@ var Mask = function (_Omi$Component) {
 exports.default = Mask;
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5638,7 +5713,7 @@ var Progress = function (_Omi$Component) {
 exports.default = Progress;
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5710,7 +5785,7 @@ var SearchBar = function (_Omi$Component) {
 exports.default = SearchBar;
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5797,7 +5872,7 @@ var Slider = function (_Omi$Component) {
 exports.default = Slider;
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5846,7 +5921,7 @@ var Switch = function (_Omi$Component) {
 exports.default = Switch;
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5870,7 +5945,7 @@ var _index = __webpack_require__(2);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(3);
+var _index3 = __webpack_require__(4);
 
 var _index4 = _interopRequireDefault(_index3);
 
@@ -5931,7 +6006,7 @@ var Toast = function (_Omi$Component) {
 exports.default = Toast;
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6004,7 +6079,7 @@ var Toptips = function (_Omi$Component) {
 exports.default = Toptips;
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6019,7 +6094,7 @@ var _version = __webpack_require__(25);
 
 var _version2 = _interopRequireDefault(_version);
 
-var _index = __webpack_require__(10);
+var _index = __webpack_require__(11);
 
 var _index2 = __webpack_require__(17);
 
@@ -6029,11 +6104,11 @@ var _index4 = __webpack_require__(19);
 
 var _index5 = _interopRequireDefault(_index4);
 
-var _index6 = __webpack_require__(8);
+var _index6 = __webpack_require__(9);
 
 var _index7 = _interopRequireDefault(_index6);
 
-var _index8 = __webpack_require__(11);
+var _index8 = __webpack_require__(3);
 
 var _index9 = __webpack_require__(12);
 
@@ -6061,7 +6136,7 @@ var _index20 = __webpack_require__(2);
 
 var _index21 = _interopRequireDefault(_index20);
 
-var _index22 = __webpack_require__(9);
+var _index22 = __webpack_require__(10);
 
 var _index23 = _interopRequireDefault(_index22);
 
@@ -6073,7 +6148,7 @@ var _index26 = __webpack_require__(24);
 
 var _index27 = _interopRequireDefault(_index26);
 
-var _index28 = __webpack_require__(3);
+var _index28 = __webpack_require__(4);
 
 var _index29 = _interopRequireDefault(_index28);
 

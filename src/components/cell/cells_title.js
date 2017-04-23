@@ -12,7 +12,7 @@ export default class CellsTitle extends Omi.Component{
             [classname]: classname
         })
         return `
-            <div class="${cls}">{{{content}}}</div>
+            <div class="${cls}">{{title}}</div>
         `
     }
 }

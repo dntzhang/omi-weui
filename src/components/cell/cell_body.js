@@ -1,14 +1,9 @@
 import Omi from 'omi'
 import classNames from 'classnames'
 
-export default class CellBody extends Omi.Compoent{
+export default class CellBody extends Omi.Component{
     constructor(data){
-        super(data);
-    }
-    install(){
-        this.data = Object.assign({
-            primary: data.primary || false
-        }, data)
+        super(data)
     }
     render(){
         const {classname, primary} = this.data;
@@ -18,7 +13,9 @@ export default class CellBody extends Omi.Compoent{
             [classname]: classname
         });
         return `
-            <div class="${cls}">{{{content}}}</div>
+            <div class="${cls}">
+                <slot></slot>     
+            </div>
         `
     }
 }
