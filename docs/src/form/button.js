@@ -1,5 +1,6 @@
 import Omi from 'omi';
-import { Button } from '../../../src/index'
+import { Button } from '../../../dist/omi-weui'
+import footer from '../common/footer'
 
 Omi.makeHTML('WxButton', Button);
 
@@ -103,9 +104,7 @@ export default class ButtonComponent extends Omi.Component {
                     <WxButton group-data="buttonData" /> 
                 </div>
             </div>
-            <div class="page__ft">
-                <a href="javascript:;"><img src=${require('../assets/icon_footer.png')}></a>
-            </div>
+            ${footer}
         </div>
         `
     }
