@@ -1,8 +1,15 @@
 import Omi from 'omi/dist/omi'
 import classNames from 'classnames';
+import Icon from '../icon';
 import OmiFinger from 'omi-finger';
 
+Omi.makeHTML('Icon', Icon);
+
 OmiFinger.init();
+
+const loadingIcon = `
+    <Icon data-value="loading" />
+`
 
 export default class Button extends Omi.Component{
     constructor(data) {
@@ -39,7 +46,7 @@ export default class Button extends Omi.Component{
             [classname]: classname
         });
         return `
-            <${Component} omi-finger {{href}} onTap="handleTap" class="${cls}">{{text}}{{{children}}}</${Component}>
+            <${Component} omi-finger {{href}} onTap="handleTap" class="${cls}">${this.data.loading ? loadingIcon : ''}{{text}}</${Component}>
         `;
     }
 }

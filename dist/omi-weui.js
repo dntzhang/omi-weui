@@ -4321,6 +4321,10 @@ var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _icon = __webpack_require__(2);
+
+var _icon2 = _interopRequireDefault(_icon);
+
 var _omiFinger = __webpack_require__(7);
 
 var _omiFinger2 = _interopRequireDefault(_omiFinger);
@@ -4337,7 +4341,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+_omi2.default.makeHTML('Icon', _icon2.default);
+
 _omiFinger2.default.init();
+
+var loadingIcon = '\n    <Icon data-value="loading" />\n';
 
 var Button = function (_Omi$Component) {
     _inherits(Button, _Omi$Component);
@@ -4384,7 +4392,7 @@ var Button = function (_Omi$Component) {
                 'weui-btn_loading': this.data.loading,
                 'weui-btn_plain-disabled': this.data.disabled && plain
             }, classname, classname));
-            return '\n            <' + Component + ' omi-finger {{href}} onTap="handleTap" class="' + cls + '">{{text}}{{{children}}}</' + Component + '>\n        ';
+            return '\n            <' + Component + ' omi-finger {{href}} onTap="handleTap" class="' + cls + '">' + (this.data.loading ? loadingIcon : '') + '{{text}}</' + Component + '>\n        ';
         }
     }]);
 
