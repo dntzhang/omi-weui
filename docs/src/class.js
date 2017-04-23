@@ -84,7 +84,7 @@ const baseTemplate = `
                         </div>
                         <div class="weui-cell__ft"></div>
                     </a>
-                    <a class="weui-cell weui-cell_access js_item" data-id="icons" href="javascript:;">
+                    <a class="weui-cell weui-cell_access js_item" onclick="handleLink(this, event)" data-id="icons" href="javascript:;">
                         <div class="weui-cell__bd">
                             <p>Icons</p>
                         </div>

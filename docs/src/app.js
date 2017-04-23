@@ -4,6 +4,7 @@ import OmiRouter from 'omi-router'
 import ClassComponent from './class'
 import ButtonComponent from './form/button'
 import ArticleComponent from './base/article'
+import IconComponent from './base/icon'
 
 export default class App extends Omi.Component {
     install() {
@@ -11,7 +12,8 @@ export default class App extends Omi.Component {
             routes: [
                 {path: '/', component: ClassComponent},
                 {path: '/button', component: ButtonComponent },
-                {path: '/article', component: ArticleComponent}
+                {path: '/article', component: ArticleComponent},
+                {path: '/icons', component: IconComponent}
             ],
             renderTo: '#container',
             defaultRoute: '/',
